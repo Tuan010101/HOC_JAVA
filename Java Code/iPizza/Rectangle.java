@@ -4,9 +4,9 @@ public class Rectangle implements IShape{
     double _width;
     double _height;
 
-    public Rectangle(double _width, double _height) {
-        this._width = _width;
-        this._height = _height;
+    public Rectangle(double w, double h) {
+        this._width = w;
+        this._height = h;
     }
 
     @Override

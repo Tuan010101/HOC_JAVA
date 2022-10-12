@@ -1,12 +1,12 @@
 package iPizza;
 
-public abstract class Pizza implements IShape{
+public class Pizza{
     double _price;
     IShape _shape;
 
-    public Pizza(double _price, IShape _shape) {
-        this._price = _price;
-        this._shape = _shape;
+    public Pizza(double p, IShape s) {
+        this._price = p;
+        this._shape = s;
     }
 
     public double get_price() {
@@ -20,8 +20,9 @@ public abstract class Pizza implements IShape{
     @Override
     public String toString() {
         return "Pizza{" +
-                "_price=" + _price +
-                ", _shape=" + _shape +
+                "price =" + _price +
+                ", shape =" + _shape +
+                ", area = " + Math.round(_shape.getArea()*100.0)/100.0 +
                 '}';
     }
 }
