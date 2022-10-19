@@ -16,8 +16,5 @@ public class TestTime {
         }catch (Exception ex){
             System.out.println("Error");
         }
-
-
     }
-
 }
