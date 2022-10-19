@@ -36,8 +36,8 @@ public class Time {
 
     public void nextSecond(){
         System.out.println("Cộng 1 giây:");
-        if (second == 60) {
-            second = 0;
+        if (second >= 60) {
+            second = second % 60;
             minute++;
         }
         if (minute >= 60) {
