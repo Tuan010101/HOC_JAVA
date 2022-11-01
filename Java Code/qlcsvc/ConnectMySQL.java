@@ -19,11 +19,10 @@ public class ConnectMySQL {
             // tạo statement để kết nối csds
             Statement stmt = conn.createStatement();
             // lấy dữ liệu từ table 'student'
-            ResultSet rs = stmt.executeQuery("select * from student");
+            ResultSet rs = stmt.executeQuery("select * from university");
             // hiển thị dữ liệu
             while (rs.next()) {
-                System.out.println(rs.getInt("id") + "  " + rs.getString("name")
-                        + "  " + rs.getDouble("score"));
+                System.out.println(rs.getInt("id") + "  " + rs.getString("name"));
             }
             // ngắt kết nối
             conn.close();
